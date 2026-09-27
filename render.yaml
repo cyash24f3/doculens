@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: yash-doculens
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: pip install -r requirements-render.txt && pip install --no-deps -e . && DOCULENS_DATA_DIR=.render-data python scripts/prepare_render.py
+    startCommand: uvicorn public_demo:app --host 0.0.0.0 --port $PORT --workers 1 --proxy-headers --forwarded-allow-ips '*'
+    healthCheckPath: /api/health
+    autoDeployTrigger: off
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.14
+      - key: DOCULENS_DATA_DIR
+        value: .render-data
+      - key: OMP_NUM_THREADS
+        value: '1'
+      - key: OPENBLAS_NUM_THREADS
+        value: '1'
+      - key: TOKENIZERS_PARALLELISM
+        value: 'false'

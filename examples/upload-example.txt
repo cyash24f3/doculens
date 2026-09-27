@@ -1,0 +1,6 @@
+Original fictional example for testing DocuLens ingestion.
+
+The example support desk operates from 09:00 to 17:00 UTC, Monday through Friday.
+Requests submitted outside these hours enter the next business day's queue.
+The example retention period for resolved requests is 45 days.
+These are invented demonstration rules, not policies for a real organization.

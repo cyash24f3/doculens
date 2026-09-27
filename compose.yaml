@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:8010:8010"
+    environment:
+      DOCULENS_DATA_DIR: /app/data
+      DOCULENS_LLM_PROVIDER: none
+    volumes:
+      - workspace:/app/data
+    restart: unless-stopped
+volumes:
+  workspace:

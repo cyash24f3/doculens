@@ -1,0 +1,21 @@
+name: Validate DocuLens
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -c requirements.lock -e '.[dev,bedrock]'
+      - run: ruff check doculens tests
+      - run: pytest -q
+      - name: Keyword-only application smoke test
+        env:
+          DOCULENS_EMBEDDINGS: 'off'
+        run: |
+          doculens --data-dir /tmp/doculens-ci demo
+          doculens --data-dir /tmp/doculens-ci ask 'What is the maximum API page size?' --mode keyword
+      - run: docker build -t doculens:test .

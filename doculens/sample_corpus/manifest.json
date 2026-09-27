@@ -1,0 +1,86 @@
+[
+  {
+    "file": "workspace-guide.md",
+    "title": "Workspace guide",
+    "category": "Product",
+    "version": "2.0",
+    "source": "Original fictional corpus"
+  },
+  {
+    "file": "access-control.md",
+    "title": "Access & permissions",
+    "category": "Security",
+    "version": "2.0",
+    "source": "Original fictional corpus"
+  },
+  {
+    "file": "api-reference.md",
+    "title": "API reference",
+    "category": "Engineering",
+    "version": "2.0",
+    "source": "Original fictional corpus"
+  },
+  {
+    "file": "data-retention.md",
+    "title": "Data retention policy",
+    "category": "Security",
+    "version": "2.0",
+    "source": "Original fictional corpus"
+  },
+  {
+    "file": "deployment-runbook.md",
+    "title": "Deployment runbook",
+    "category": "Operations",
+    "version": "2.0",
+    "source": "Original fictional corpus"
+  },
+  {
+    "file": "incident-response.md",
+    "title": "Incident response",
+    "category": "Operations",
+    "version": "2.0",
+    "source": "Original fictional corpus"
+  },
+  {
+    "file": "indexing-guide.md",
+    "title": "Indexing & document versions",
+    "category": "Engineering",
+    "version": "2.0",
+    "source": "Original fictional corpus"
+  },
+  {
+    "file": "search-guide.md",
+    "title": "Search & answer quality",
+    "category": "Product",
+    "version": "2.0",
+    "source": "Original fictional corpus"
+  },
+  {
+    "file": "backup-recovery.md",
+    "title": "Backup & recovery",
+    "category": "Operations",
+    "version": "2.0",
+    "source": "Original fictional corpus"
+  },
+  {
+    "file": "webhooks.md",
+    "title": "Webhook integration",
+    "category": "Engineering",
+    "version": "2.0",
+    "source": "Original fictional corpus"
+  },
+  {
+    "file": "billing-plans.md",
+    "title": "Plans & billing",
+    "category": "Product",
+    "version": "2.0",
+    "source": "Original fictional corpus"
+  },
+  {
+    "file": "export-guide.md",
+    "title": "Exports & portability",
+    "category": "Product",
+    "version": "2.0",
+    "source": "Original fictional corpus"
+  }
+]

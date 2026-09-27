@@ -1,0 +1,1000 @@
+[
+  {
+    "id": "q01",
+    "question": "How many people can join a new Sandbox workspace?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "workspace-guide.md",
+        "contains": "up to 10 members"
+      }
+    ],
+    "expected_terms": [
+      "10"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q02",
+    "question": "What file types can I upload to the library?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "workspace-guide.md",
+        "contains": "accepts PDF, Markdown"
+      }
+    ],
+    "expected_terms": [
+      "PDF",
+      "Markdown",
+      "text"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q03",
+    "question": "What is the maximum size of an uploaded file?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "workspace-guide.md",
+        "contains": "at most 10 MiB"
+      }
+    ],
+    "expected_terms": [
+      "10 MiB"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q04",
+    "question": "Can an owner leave without transferring ownership?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "workspace-guide.md",
+        "contains": "must transfer ownership before leaving"
+      }
+    ],
+    "expected_terms": [
+      "transfer"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q05",
+    "question": "Who is allowed to transfer workspace ownership?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "workspace-guide.md",
+        "contains": "Only the current owner"
+      }
+    ],
+    "expected_terms": [
+      "owner"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q06",
+    "question": "What are the four workspace roles?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "access-control.md",
+        "contains": "four workspace roles"
+      }
+    ],
+    "expected_terms": [
+      "Owner",
+      "Admin",
+      "Editor",
+      "Viewer"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q07",
+    "question": "Can a Viewer delete a document?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "access-control.md",
+        "contains": "Viewers can search"
+      }
+    ],
+    "expected_terms": [
+      "cannot"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q08",
+    "question": "What happens to API tokens when a member is removed?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "access-control.md",
+        "contains": "tokens belonging to a removed member"
+      }
+    ],
+    "expected_terms": [
+      "revoked"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q09",
+    "question": "How long is an invitation valid?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "access-control.md",
+        "contains": "expire after 72 hours"
+      }
+    ],
+    "expected_terms": [
+      "72 hours"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q10",
+    "question": "Who may invite new members?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "access-control.md",
+        "contains": "Only Owners and Admins can invite"
+      }
+    ],
+    "expected_terms": [
+      "Owners",
+      "Admins"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q11",
+    "question": "How do clients authenticate API requests?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "api-reference.md",
+        "contains": "bearer token in the Authorization"
+      }
+    ],
+    "expected_terms": [
+      "bearer",
+      "Authorization"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q12",
+    "question": "How many search requests per minute are permitted?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "api-reference.md",
+        "contains": "120 requests per minute"
+      }
+    ],
+    "expected_terms": [
+      "120"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q13",
+    "question": "What should a client do after receiving HTTP 429?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "api-reference.md",
+        "contains": "Retry-After header"
+      }
+    ],
+    "expected_terms": [
+      "Retry-After",
+      "wait"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q14",
+    "question": "What is the largest API page size?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "api-reference.md",
+        "contains": "maximum page size is 100"
+      }
+    ],
+    "expected_terms": [
+      "100"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q15",
+    "question": "How long does an upload idempotency key remain valid?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "api-reference.md",
+        "contains": "Keys remain valid for 24 hours"
+      }
+    ],
+    "expected_terms": [
+      "24 hours"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q16",
+    "question": "When does a deleted document disappear from active search?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "data-retention.md",
+        "contains": "active search index immediately"
+      }
+    ],
+    "expected_terms": [
+      "immediately"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q17",
+    "question": "How long are backup copies of deleted documents retained?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "data-retention.md",
+        "contains": "Backup copies expire within 30 days"
+      }
+    ],
+    "expected_terms": [
+      "30 days"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q18",
+    "question": "How long is audit history stored?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "data-retention.md",
+        "contains": "retained for 180 days"
+      }
+    ],
+    "expected_terms": [
+      "180 days"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q19",
+    "question": "Does disabling question history erase existing records?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "data-retention.md",
+        "contains": "does not automatically erase"
+      }
+    ],
+    "expected_terms": [
+      "does not"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q20",
+    "question": "How long can a closed workspace be recovered?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "data-retention.md",
+        "contains": "7-day recovery window"
+      }
+    ],
+    "expected_terms": [
+      "7-day"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q21",
+    "question": "What checks must pass before deployment?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "deployment-runbook.md",
+        "contains": "unit tests, integration tests"
+      }
+    ],
+    "expected_terms": [
+      "unit tests",
+      "integration tests",
+      "migration"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q22",
+    "question": "What percentage of traffic is used for the canary rollout?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "deployment-runbook.md",
+        "contains": "10 percent canary"
+      }
+    ],
+    "expected_terms": [
+      "10 percent"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q23",
+    "question": "How long does the canary phase run?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "deployment-runbook.md",
+        "contains": "canary for 15 minutes"
+      }
+    ],
+    "expected_terms": [
+      "15 minutes"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q24",
+    "question": "Does rollback automatically undo database migrations?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "deployment-runbook.md",
+        "contains": "does not automatically reverse database migrations"
+      }
+    ],
+    "expected_terms": [
+      "does not"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q25",
+    "question": "What does the readiness endpoint check?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "deployment-runbook.md",
+        "contains": "readiness endpoint is /health/ready"
+      }
+    ],
+    "expected_terms": [
+      "database connectivity"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q26",
+    "question": "What counts as a SEV1 incident?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "incident-response.md",
+        "contains": "complete service outage"
+      }
+    ],
+    "expected_terms": [
+      "outage",
+      "exposure"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q27",
+    "question": "How quickly should the on-call engineer acknowledge a SEV1 page?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "incident-response.md",
+        "contains": "acknowledges the page within 10 minutes"
+      }
+    ],
+    "expected_terms": [
+      "10 minutes"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q28",
+    "question": "How often are SEV1 status updates posted?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "incident-response.md",
+        "contains": "status update every 30 minutes"
+      }
+    ],
+    "expected_terms": [
+      "30 minutes"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q29",
+    "question": "When is the SEV1 postmortem due?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "incident-response.md",
+        "contains": "within 5 business days"
+      }
+    ],
+    "expected_terms": [
+      "5 business days"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q30",
+    "question": "What must each postmortem action include?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "incident-response.md",
+        "contains": "Each action requires an owner"
+      }
+    ],
+    "expected_terms": [
+      "owner",
+      "target date"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q31",
+    "question": "How large are default chunks and overlaps?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "indexing-guide.md",
+        "contains": "150 words with a 25-word overlap"
+      }
+    ],
+    "expected_terms": [
+      "150",
+      "25"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q32",
+    "question": "What happens to an old version when a document is replaced?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "indexing-guide.md",
+        "contains": "prior version becomes archived"
+      }
+    ],
+    "expected_terms": [
+      "archived"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q33",
+    "question": "Can vectors from different embedding models be compared directly?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "indexing-guide.md",
+        "contains": "must never be compared directly"
+      }
+    ],
+    "expected_terms": [
+      "never"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q34",
+    "question": "Does PDF extraction reliably reconstruct every table?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "indexing-guide.md",
+        "contains": "cannot reliably reconstruct every table"
+      }
+    ],
+    "expected_terms": [
+      "cannot"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q35",
+    "question": "What search method works well for exact error codes?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "search-guide.md",
+        "contains": "Keyword search is useful for exact identifiers"
+      }
+    ],
+    "expected_terms": [
+      "Keyword"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q36",
+    "question": "How does hybrid retrieval combine search methods?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "search-guide.md",
+        "contains": "reciprocal-rank fusion"
+      }
+    ],
+    "expected_terms": [
+      "reciprocal-rank"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q37",
+    "question": "Does a citation guarantee a generated answer is correct?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "search-guide.md",
+        "contains": "not that a generated statement is necessarily correct"
+      }
+    ],
+    "expected_terms": [
+      "not"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q38",
+    "question": "Are category filters applied before or after ranking?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "search-guide.md",
+        "contains": "applied before retrieval ranking"
+      }
+    ],
+    "expected_terms": [
+      "before"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q39",
+    "question": "When does the full database backup run?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "backup-recovery.md",
+        "contains": "every day at 02:00 UTC"
+      }
+    ],
+    "expected_terms": [
+      "02:00 UTC"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q40",
+    "question": "What is the recovery point objective?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "backup-recovery.md",
+        "contains": "recovery point objective is 15 minutes"
+      }
+    ],
+    "expected_terms": [
+      "15 minutes"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q41",
+    "question": "What is the recovery time objective?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "backup-recovery.md",
+        "contains": "recovery time objective is 4 hours"
+      }
+    ],
+    "expected_terms": [
+      "4 hours"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q42",
+    "question": "How often is a restore exercise performed?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "backup-recovery.md",
+        "contains": "once per quarter"
+      }
+    ],
+    "expected_terms": [
+      "quarter"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q43",
+    "question": "Which webhook event types are emitted?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "webhooks.md",
+        "contains": "document.created, document.replaced, and document.deleted"
+      }
+    ],
+    "expected_terms": [
+      "document.created",
+      "document.replaced",
+      "document.deleted"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q44",
+    "question": "What is the webhook response deadline?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "webhooks.md",
+        "contains": "within 5 seconds"
+      }
+    ],
+    "expected_terms": [
+      "5 seconds"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q45",
+    "question": "What algorithm signs webhook payloads?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "webhooks.md",
+        "contains": "HMAC-SHA256"
+      }
+    ],
+    "expected_terms": [
+      "HMAC-SHA256"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q46",
+    "question": "Which identifier is used to deduplicate webhook events?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "webhooks.md",
+        "contains": "deduplicate using event_id"
+      }
+    ],
+    "expected_terms": [
+      "event_id"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q47",
+    "question": "How many members does the Team plan support?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "billing-plans.md",
+        "contains": "supports 50 members"
+      }
+    ],
+    "expected_terms": [
+      "50"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q48",
+    "question": "When do plan downgrades take effect?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "billing-plans.md",
+        "contains": "next billing period"
+      }
+    ],
+    "expected_terms": [
+      "next billing period"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q49",
+    "question": "What formats are available for metadata and trace exports?",
+    "split": "dev",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "export-guide.md",
+        "contains": "metadata can be exported as CSV"
+      }
+    ],
+    "expected_terms": [
+      "CSV",
+      "JSON"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q50",
+    "question": "Does the service use uploaded content to train a shared model?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "export-guide.md",
+        "contains": "does not use uploaded content to train"
+      }
+    ],
+    "expected_terms": [
+      "does not"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q51",
+    "question": "Does the app automatically remove secrets from uploads?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "export-guide.md",
+        "contains": "does not automatically redact secrets"
+      }
+    ],
+    "expected_terms": [
+      "does not"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q52",
+    "question": "Which passages are sent when an external LLM is enabled?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "export-guide.md",
+        "contains": "sends selected passages"
+      }
+    ],
+    "expected_terms": [
+      "selected passages"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q53",
+    "question": "What happens to the old version after replacement, and are category filters applied before ranking?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "indexing-guide.md",
+        "contains": "prior version becomes archived"
+      },
+      {
+        "file": "search-guide.md",
+        "contains": "applied before retrieval ranking"
+      }
+    ],
+    "expected_terms": [
+      "archived",
+      "before"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q54",
+    "question": "Who may delete documents, and how soon do deleted documents leave active search?",
+    "split": "test",
+    "answerable": true,
+    "gold": [
+      {
+        "file": "access-control.md",
+        "contains": "Editors can upload, replace, and delete"
+      },
+      {
+        "file": "data-retention.md",
+        "contains": "active search index immediately"
+      }
+    ],
+    "expected_terms": [
+      "Editors",
+      "immediately"
+    ],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q55",
+    "question": "What is the Team plan price in US dollars?",
+    "split": "dev",
+    "answerable": false,
+    "gold": [],
+    "expected_terms": [],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q56",
+    "question": "What is the CEO\u2019s home address?",
+    "split": "test",
+    "answerable": false,
+    "gold": [],
+    "expected_terms": [],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q57",
+    "question": "Which exact AWS region stores all customer documents?",
+    "split": "test",
+    "answerable": false,
+    "gold": [],
+    "expected_terms": [],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q58",
+    "question": "What is the company\u2019s revenue for 2025?",
+    "split": "test",
+    "answerable": false,
+    "gold": [],
+    "expected_terms": [],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q59",
+    "question": "How many paid vacation days do employees receive?",
+    "split": "dev",
+    "answerable": false,
+    "gold": [],
+    "expected_terms": [],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q60",
+    "question": "What is the administrator password?",
+    "split": "test",
+    "answerable": false,
+    "gold": [],
+    "expected_terms": [],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q61",
+    "question": "What is the maximum file size on the Enterprise plan?",
+    "split": "test",
+    "answerable": false,
+    "gold": [],
+    "expected_terms": [],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q62",
+    "question": "What temperature should a chocolate cake bake at?",
+    "split": "test",
+    "answerable": false,
+    "gold": [],
+    "expected_terms": [],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q63",
+    "question": "What is the service uptime measured during August 2026?",
+    "split": "dev",
+    "answerable": false,
+    "gold": [],
+    "expected_terms": [],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q64",
+    "question": "Which mobile operating systems support the native app?",
+    "split": "test",
+    "answerable": false,
+    "gold": [],
+    "expected_terms": [],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q65",
+    "question": "What credit card number is used for workspace billing?",
+    "split": "test",
+    "answerable": false,
+    "gold": [],
+    "expected_terms": [],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  },
+  {
+    "id": "q66",
+    "question": "What was the root cause of the outage on February 12, 2026?",
+    "split": "test",
+    "answerable": false,
+    "gold": [],
+    "expected_terms": [],
+    "label_origin": "Authored from bundled fictional corpus; not externally human-reviewed"
+  }
+]
