@@ -1,5 +1,7 @@
 # DocuLens
 
+[Live demo](https://yash-doculens.onrender.com) · [Public demo limitations](docs/PUBLIC_DEMO.md)
+
 **A complete local document intelligence and search application.** Upload documents, retrieve relevant passages, inspect citations, compare search methods, and evaluate answers against a reproducible question set.
 
 ![DocuLens](docs/screenshots/home.png)
