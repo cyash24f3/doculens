@@ -2,7 +2,7 @@
 
 from datetime import datetime, timezone
 from pathlib import Path
-from importlib.metadata import version
+from importlib.metadata import PackageNotFoundError, version
 import hashlib
 import json
 import time
@@ -11,6 +11,16 @@ import numpy as np
 from .ingest import extract, chunk_segments
 from .retrieval import search_rows
 from .generation import answer
+
+
+def installed_versions():
+    result = {}
+    for package in ["numpy", "sentence-transformers", "onnxruntime", "tokenizers", "pypdf"]:
+        try:
+            result[package] = version(package)
+        except PackageNotFoundError:
+            pass  # Serving backends intentionally have different optional dependencies.
+    return result
 
 
 def relevant(result, gold):
@@ -145,7 +155,7 @@ def evaluate(service, progress=lambda message: None):
         "metric_note": "Recall@5 measures gold passage coverage. Answer-term coverage is a lexical proxy, not factual correctness. Quote fidelity checks verbatim source membership, not relevance. Latencies include local warmed/cold cache effects and are not an SLA.",
         "embedding_model": service.encoder.fingerprint,
         "gate_threshold": service.settings.semantic_threshold,
-        "versions": {p: version(p) for p in ["numpy", "sentence-transformers", "pypdf"]},
+        "versions": installed_versions(),
         "source_hashes": {d["filename"]: d["sha256"] for d in docs.values()},
         "question_set_sha256": hashlib.sha256((folder / "evaluation.json").read_bytes()).hexdigest(),
         "aggregates": aggregates,
